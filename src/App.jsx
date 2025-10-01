@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Homepage from "./pages/Homepage.jsx";
+import About from "./pages/About.jsx";
 
 import {
   Route,
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
       <Route index element={<Homepage />} />
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<PageNotFound />} />
     </Route>
   )

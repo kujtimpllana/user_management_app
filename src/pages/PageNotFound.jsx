@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 const PageNotFound = () => {
   return (
-    <main className="h-[calc(100vh_-_1.2rem)] flex justify-center items-center text-center">
+    <main className="h-[80vh] flex justify-center items-center text-center">
       <div className="flex flex-col justify-center items-center gap-[0.4rem]">
         <TbMoodSad className="text-center text-6xl" />
         <h1 className="font-bold text-5xl">Error - 404</h1>
