@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaUserCircle, FaBuilding } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import UserCard from "./UserCard";
+import SearchInput from "./SearchInput";
 
 const ListUsers = () => {
   const [users, setUsers] = useState([]);
@@ -38,13 +39,7 @@ const ListUsers = () => {
 
   return (
     <main className="px-[4rem] mb-[6rem]">
-      <input
-        type="text"
-        placeholder="Search by name or email"
-        onChange={(e) => setSearch(e.target.value)}
-        value={search}
-        className="w-[350px] px-[1rem] py-[0.6rem] outline-none border-4 border-[var(--dark-color)] rounded-[0.4rem] focus:border-[var(--primary-color)]"
-      />
+      <SearchInput search={search} setSearch={setSearch} />
       {search === "" ? (
         <h2 className="font-bold text-2xl mt-[3rem]">All users:</h2>
       ) : search && filteredUsers.length == 0 ? (
