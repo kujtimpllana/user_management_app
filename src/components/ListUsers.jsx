@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaUserCircle, FaBuilding } from "react-icons/fa";
+import { FaUserCircle, FaBuilding, FaEye } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import UserCard from "./UserCard";
 import SearchInput from "./SearchInput";
@@ -44,13 +44,11 @@ const ListUsers = () => {
         <h2 className="font-bold text-2xl mt-[3rem]">All users:</h2>
       ) : search && filteredUsers.length == 0 ? (
         <h2 className="font-bold text-2xl mt-[3rem]">
-          No users found with the keyword: "
-          <span className="font-bold italic">{search}</span>"
+          No users found with the keyword: "<span>{search}</span>"
         </h2>
       ) : (
         <h2 className="font-bold text-2xl mt-[3rem]">
-          Users found with the keyword: "
-          <span className="font-bold italic">{search}</span>"
+          Users found with the keyword: "<span>{search}</span>"
         </h2>
       )}
 
@@ -71,6 +69,12 @@ const ListUsers = () => {
                   <p className="flex items-center gap-[0.6rem]">
                     <FaBuilding /> {user.company.name}
                   </p>
+                  <div className="flex">
+                    <button className="flex items-center gap-[0.6rem] rounded-[0.4rem] text-[var(--light-color)] px-[1.2rem] py-[0.4rem] bg-[var(--primary-color)] hover:bg-red-900 transition-all duration-200 ease-in-out">
+                      <FaEye className="click_cursor" />
+                      View
+                    </button>
+                  </div>
                 </UserCard>
               ))
             : filteredUsers.map((user) => (
@@ -85,6 +89,11 @@ const ListUsers = () => {
                   <p className="flex items-center gap-[0.6rem]">
                     <FaBuilding /> {user.company.name}
                   </p>
+                  <div className="flex">
+                    <button className="flex items-center gap-[0.6rem] rounded-[0.4rem] text-[var(--light-color)] px-[1.2rem] py-[0.4rem] bg-[var(--primary-color)] hover:bg-red-900 transition-all duration-200 ease-in-out">
+                      <FaEye className="click_cursor" /> View
+                    </button>
+                  </div>
                 </UserCard>
               ))}
         </div>
