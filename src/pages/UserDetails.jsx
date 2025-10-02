@@ -56,8 +56,9 @@ const UserDetails = () => {
 
       <div className="flex flex-col h-auto md:h-[calc(100vh-2.4rem)] justify-center items-center my-[2rem]">
         <div className="w-auto flex-col gap-[0.6rem] bg-[var(--dark-color)] text-[var(--light-color)] px-[6rem] py-[4rem] rounded-[0.4rem]">
-          <div>
+          <div className="flex items-center gap-[2rem]">
             <FaUserCircle className="text-6xl" />
+            <h1 className="text-2xl border-b-4 border-[var(--primary-color)]">User Details</h1>
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-[2rem]">
             <div className="flex flex-col">
@@ -69,7 +70,7 @@ const UserDetails = () => {
                 value={name}
                 id="name"
                 name="name"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
               <label htmlFor="street" className="mt-[1rem]">
                 Email:
@@ -79,7 +80,7 @@ const UserDetails = () => {
                 value={email}
                 id="email"
                 name="email"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
               <label htmlFor="company" className="mt-[1rem]">
                 Company:
@@ -89,7 +90,7 @@ const UserDetails = () => {
                 value={company}
                 id="company"
                 name="company"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
               <label htmlFor="street" className="mt-[1rem]">
                 Street:
@@ -99,7 +100,7 @@ const UserDetails = () => {
                 value={street}
                 id="street"
                 name="street"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
               <label htmlFor="suite" className="mt-[1rem]">
                 Suite:
@@ -109,7 +110,7 @@ const UserDetails = () => {
                 value={suite}
                 id="suite"
                 name="suite"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
             </div>
             <div className="flex flex-col">
@@ -121,7 +122,7 @@ const UserDetails = () => {
                 value={city}
                 id="city"
                 name="city"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
               <label htmlFor="zipcode" className="mt-[1rem]">
                 Zip Code:
@@ -131,7 +132,7 @@ const UserDetails = () => {
                 value={zipcode}
                 id="zipcode"
                 name="zipcode"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
 
               <label htmlFor="phone" className="mt-[1rem]">
@@ -142,7 +143,7 @@ const UserDetails = () => {
                 value={phone}
                 id="phone"
                 name="phone"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
 
               <label htmlFor="website" className="mt-[1rem]">
@@ -153,7 +154,7 @@ const UserDetails = () => {
                 value={website}
                 id="website"
                 name="website"
-                className="bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
+                className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
             </div>
           </div>
