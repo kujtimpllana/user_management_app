@@ -34,7 +34,6 @@ const ListUsers = () => {
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       <div>
-        <h2 className="font-bold text-2xl">All users:</h2>
         <div className="mt-[3rem] grid grid-cols-4 gap-[8.4rem]">
           {users.map((user) => (
             <UserCard key={user.id}>
