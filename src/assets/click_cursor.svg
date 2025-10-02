@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.196686"
+   height="26.177765"
+   viewBox="0 0 8.2541229 6.9262003"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-102.86293,-97.986677)">
+    <g
+       id="g18"
+       transform="matrix(0.44196023,-0.34347973,0.34347973,0.44196023,65.160887,76.137862)">
+      <path
+         style="fill:#e6e6e6;stroke:#1a1a1a;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 29.723349,78.287704 c -0.09492,-1.628634 -0.272976,-2.228934 -0.980121,-3.76412 -0.707139,-1.535188 1.20632,-1.979038 1.977744,-0.251961 0.771426,1.727087 1.229084,3.365945 1.229084,3.365945 0,0 1.539884,-0.696908 1.9176,0.51127 0.354989,0.05479 0.968652,-0.736747 1.832329,0.258331 5e-6,-0.04523 1.000051,-0.407082 1.500074,0.633232 0.500021,1.040311 0.649636,2.247924 -0.218217,4.294842 -0.867854,2.046913 -1.317851,2.942412 -1.349996,3.965887 h -2.57584 c 0,0 -0.454564,-0.637799 -0.11363,-1.463258 -0.420472,0.474921 -0.943227,0.811974 -0.943223,1.46326 h -2.795836 c 0,0 0.548267,-1.503193 -0.126721,-2.462687 -0.674997,-0.959493 -2.346415,-1.247343 -2.828559,-2.398728 -0.482141,-1.151392 1.242194,-1.227992 2.282133,-0.415781 2.469322,1.844676 1.193179,-3.736232 1.193179,-3.736232 z"
+         id="path15" />
+      <path
+         style="fill:#e6e6e6;stroke:#1a1a1a;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 31.930944,80.545888 c 0,0 0.218698,1.297303 -0.218698,3.00864"
+         id="path16" />
+      <path
+         style="fill:#e6e6e6;stroke:#1a1a1a;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 33.722707,80.322765 c 0,0 0.05467,2.070166 -0.410059,3.312265"
+         id="path17" />
+      <path
+         style="fill:#e6e6e6;stroke:#1a1a1a;stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 35.385365,81.044638 c 0,0 -0.05468,1.600928 -0.60142,2.925834"
+         id="path18" />
+    </g>
+  </g>
+</svg>
