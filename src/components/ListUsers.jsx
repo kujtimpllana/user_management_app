@@ -57,7 +57,7 @@ const ListUsers = () => {
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
       <div>
-        <div className="mt-[3rem] grid grid-cols-4 gap-[8.4rem]">
+        <div className="mt-[3rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[3rem] md:gap-[4rem] lg:gap-[2rem] xl:gap-[3.8rem]">
           {search === ""
             ? users.map((user) => (
                 <UserCard key={user.id}>
