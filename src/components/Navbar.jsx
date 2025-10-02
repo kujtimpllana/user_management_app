@@ -4,7 +4,7 @@ import linkpluslogo from "../assets/linkplus_full_logo.png";
 
 export const Navbar = () => {
   return (
-    <header className="">
+    <header className="sticky top-0">
       <nav className="bg-[var(--primary-color)] px-[4rem] py-[0.6rem] flex items-center justify-between text-[var(--light-color)]">
         <div>
           <img src={linkpluslogo} alt="LINKPLUS Logo" className="w-[120px]" />
