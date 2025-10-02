@@ -4,8 +4,12 @@ import linkpluslogo from "../assets/linkplus_full_logo.png";
 const About = () => {
   return (
     <div className="h-[80vh] flex flex-col justify-center items-center text-center">
-      <img src={linkpluslogo} alt="LINKPLUS Logo" className="w-[600px]" />
-      <h2 className="text-lg w-[900px]">
+      <img
+        src={linkpluslogo}
+        alt="LINKPLUS Logo"
+        className="w-[320px] md:w-[600px]"
+      />
+      <h2 className="text-sm md:text-md lg:text-lg w-[320px] md:w-[600px] lg:w-[900px]">
         LinkPlus IT was founded in November of 2013. In it’s beginning LinkPlus
         started developing highly customized business applications for different
         companies and providing services to a new and rising technology industry
