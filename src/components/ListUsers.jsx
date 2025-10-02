@@ -60,7 +60,7 @@ const ListUsers = () => {
             ? users.map((user) => (
                 <UserCard key={user.id}>
                   <FaUserCircle className="text-5xl" />
-                  <h2 className="text-xl font-bold text-red-600">
+                  <h2 className="text-2xl font-bold text-red-600">
                     {user.name}
                   </h2>
                   <p className="flex items-center gap-[0.6rem]">
@@ -80,7 +80,7 @@ const ListUsers = () => {
             : filteredUsers.map((user) => (
                 <UserCard key={user.id}>
                   <FaUserCircle className="text-5xl" />
-                  <h2 className="text-xl font-bold text-red-600">
+                  <h2 className="text-2xl font-bold text-red-600">
                     {user.name}
                   </h2>
                   <p className="flex items-center gap-[0.6rem]">

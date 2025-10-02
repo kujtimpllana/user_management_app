@@ -45,7 +45,8 @@ img,
 p:hover,
 h1:hover,
 h2:hover,
-h3:hover {
+h3:hover,
+input {
   cursor: url(/src/assets/highlight_cursor.svg) 0 0, auto !important;
 }
 
