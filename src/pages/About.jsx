@@ -3,7 +3,7 @@ import linkpluslogo from "../assets/linkplus_full_logo.png";
 
 const About = () => {
   return (
-    <div className="h-[80vh] flex flex-col justify-center items-center text-center">
+    <div className="h-[calc(100vh-2.4rem)] flex flex-col justify-center items-center text-center">
       <img
         src={linkpluslogo}
         alt="LINKPLUS Logo"

@@ -28,6 +28,11 @@
   --light-color: #e1e1e1;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .no-scroll::-webkit-scrollbar {
   display: none;
 }
