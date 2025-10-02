@@ -17,7 +17,7 @@ export const Navbar = () => {
                 isActive ? "bg-[var(--dark-color)] rounded-[0.4rem]" : ""
               }
             >
-              <li className="px-[0.8rem] py-[0.2rem] hover:text-[var(--light-color)] hover:bg-[var(--dark-color)] hover:rounded-[0.4rem] transition-all duration-200 ease-in-out click_cursor">
+              <li className="px-[0.8rem] py-[0.2rem] hover:text-[var(--light-color)] hover:bg-[var(--dark-color)] hover:rounded-[0.4rem] transition-all duration-200 ease-in-out">
                 Home
               </li>
             </NavLink>
@@ -27,7 +27,7 @@ export const Navbar = () => {
                 isActive ? "bg-[var(--dark-color)] rounded-[0.4rem]" : ""
               }
             >
-              <li className="px-[0.8rem] py-[0.2rem] hover:text-[var(--light-color)] hover:bg-[var(--dark-color)] hover:rounded-[0.4rem] transition-all duration-200 ease-in-out click_cursor">
+              <li className="px-[0.8rem] py-[0.2rem] hover:text-[var(--light-color)] hover:bg-[var(--dark-color)] hover:rounded-[0.4rem] transition-all duration-200 ease-in-out">
                 About
               </li>
             </NavLink>

@@ -3,10 +3,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: url(/src/assets/mouse_cursor.svg) 0 0, default;
-  scroll-behavior: smooth !important;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -26,40 +23,4 @@
   --primary-color: #6d0b00;
   --dark-color: #111111;
   --light-color: #e1e1e1;
-}
-
-.no-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-button,
-a,
-a:hover,
-button:hover,
-img,
-.click_cursor {
-  cursor: pointer;
-  cursor: url(/src/assets/click_cursor.svg) 0 0, auto !important;
-}
-
-p:hover,
-h1:hover,
-h2:hover,
-h3:hover {
-  cursor: url(/src/assets/highlight_cursor.svg) 0 0, auto !important;
-}
-
-input {
-  caret-color: var(--primary-color);
-}
-
-::-moz-selection {
-  /* Code for Firefox */
-  color: var(--light-color);
-  background: var(--primary-color);
-}
-
-::selection {
-  color: var(--light-color);
-  background: var(--primary-color);
 }
