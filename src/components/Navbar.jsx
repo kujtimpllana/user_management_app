@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import linkpluslogo from "../assets/linkplus_full_logo.png";
 
 export const Navbar = () => {
@@ -7,7 +7,9 @@ export const Navbar = () => {
     <header className="sticky top-0">
       <nav className="bg-[var(--primary-color)] px-[4rem] py-[0.6rem] flex items-center justify-between text-[var(--light-color)]">
         <div>
-          <img src={linkpluslogo} alt="LINKPLUS Logo" className="w-[120px]" />
+          <Link to="/">
+            <img src={linkpluslogo} alt="LINKPLUS Logo" className="w-[120px]" />
+          </Link>
         </div>
         <div>
           <ul className="flex gap-[1.4rem] font-bold">

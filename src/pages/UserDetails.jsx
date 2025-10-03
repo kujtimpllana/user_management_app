@@ -2,63 +2,27 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { FaUserCircle } from "react-icons/fa";
 
+import { useSelector } from "react-redux";
+import { setAllUsers } from "../store/UsersSlice";
+
 const UserDetails = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [street, setStreet] = useState("");
-  const [suite, setSuite] = useState("");
-  const [city, setCity] = useState("");
-  const [zipcode, setZipcode] = useState("");
-  const [website, setWebsite] = useState("");
-  const [phone, setPhone] = useState("");
-
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
-
   const { id } = useParams();
-  //   console.log(id);
+  const singleUser = useSelector((state) =>
+    state.users.list.find((user) => user.id == Number(id))
+  );
 
-  useEffect(() => {
-    const fetchSingleUser = async () => {
-      try {
-        const response = await fetch(
-          `https://jsonplaceholder.typicode.com/users/${id}`
-        );
-
-        if (!response.ok) {
-          throw new Error("An error has occurred.");
-        }
-        const data = await response.json();
-        setName(data.name);
-        setEmail(data.email);
-        setCompany(data.company.name);
-        setStreet(data.address.street);
-        setSuite(data.address.suite);
-        setCity(data.address.city);
-        setZipcode(data.address.zipcode);
-        setPhone(data.phone);
-        setWebsite(data.website);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchSingleUser();
-  }, [id]);
+  if (!singleUser) return;
 
   return (
     <main className="px-[4rem]">
-      {isLoading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-
       <div className="flex flex-col h-auto md:h-[calc(100vh-2.4rem)] justify-center items-center my-[2rem]">
         <div className="w-auto flex-col gap-[0.6rem] bg-[var(--dark-color)] text-[var(--light-color)] px-[6rem] py-[4rem] rounded-[0.4rem]">
           <div className="flex items-center gap-[2rem]">
             <FaUserCircle className="text-6xl" />
-            <h1 className="text-2xl border-b-4 border-[var(--primary-color)]">User Details</h1>
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-bold uppercase">User Details</h1>
+              <span className="h-[6px] w-[80px] bg-[var(--primary-color)] my-[0.2rem]"></span>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-[2rem]">
             <div className="flex flex-col">
@@ -67,17 +31,17 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={name}
+                value={singleUser.name}
                 id="name"
                 name="name"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
               />
-              <label htmlFor="street" className="mt-[1rem]">
+              <label htmlFor="email" className="mt-[1rem]">
                 Email:
               </label>
               <input
                 type="text"
-                value={email}
+                value={singleUser.email}
                 id="email"
                 name="email"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -87,7 +51,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={company}
+                value={singleUser.company.name}
                 id="company"
                 name="company"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -97,7 +61,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={street}
+                value={singleUser.address.street}
                 id="street"
                 name="street"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -107,7 +71,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={suite}
+                value={singleUser.address.suite}
                 id="suite"
                 name="suite"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -119,7 +83,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={city}
+                value={singleUser.address.city}
                 id="city"
                 name="city"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -129,7 +93,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={zipcode}
+                value={singleUser.address.zipcode}
                 id="zipcode"
                 name="zipcode"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -140,7 +104,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={phone}
+                value={singleUser.phone}
                 id="phone"
                 name="phone"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"
@@ -151,7 +115,7 @@ const UserDetails = () => {
               </label>
               <input
                 type="text"
-                value={website}
+                value={singleUser.website}
                 id="website"
                 name="website"
                 className="!cursor-not-allowed !caret-transparent !outline-0 bg-[var(--light-color)] text-[var(--dark-color)] px-[1rem] py-[0.3rem] rounded-[0.4rem]"

@@ -43,7 +43,7 @@ a:hover,
 button:hover,
 img,
 .click_cursor {
-  cursor: pointer;
+  cursor: pointer !important;
   cursor: url(/src/assets/click_cursor.svg) 0 0, auto !important;
 }
 
