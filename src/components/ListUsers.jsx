@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 import { IoMdAddCircleOutline, IoMdCloseCircle } from "react-icons/io";
 import { ClipLoader } from "react-spinners";
 import SortUsers from "./SortUsers";
-import { AddUserForm } from "./addUserForm";
+import { AddUserForm } from "./AddUserForm";
 
 import { useSelector, useDispatch } from "react-redux";
 import { setAllUsers, updateUser, deleteUser } from "../store/UsersSlice";
